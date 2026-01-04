@@ -13,7 +13,7 @@ Arbitrary code execution when running opencode in attacker-controlled directorie
 
 OpenCode is built with Bun, which reads `bunfig.toml` from the current working directory. The `preload` option executes arbitrary scripts before the main program runs.
 
-When a user runs `oc` in a malicious repository, attacker-controlled code executes with the user's privileges—before opencode even starts.
+When a user runs `opencode` (or `oc`) in a malicious repository, attacker-controlled code executes with the user's privileges—before opencode even starts.
 
 OpenCode attempts to disable this via `autoloadBunfig: false` at compile time, but this is bypassed due to a Bun bug when `execArgv` is used.
 
