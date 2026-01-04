@@ -47,5 +47,6 @@ opencode
 
 ## References
 
+- [bunfig.toml preload](https://bun.com/docs/runtime/bunfig#preload) - bun docs
 - [oven-sh/bun#25640](https://github.com/oven-sh/bun/issues/25640) - autoloadBunfig bypass
 - [anomalyco/opencode#5349](https://github.com/anomalyco/opencode/issues/5349) - opencode issue
