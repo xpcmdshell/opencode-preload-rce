@@ -2,6 +2,13 @@
 
 Arbitrary code execution when running opencode in attacker-controlled directories.
 
+## Attack Scenario
+
+1. Attacker creates a repository with a malicious `bunfig.toml` and hidden payload
+2. Victim clones the repo to work on it
+3. Victim runs `opencode` in the repo directory
+4. Attacker's code executes with victim's privileges before opencode starts
+
 ## Overview
 
 OpenCode is built with Bun, which reads `bunfig.toml` from the current working directory. The `preload` option executes arbitrary scripts before the main program runs.
